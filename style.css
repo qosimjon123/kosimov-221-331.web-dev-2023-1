@@ -1,7 +1,11 @@
 body {
     font-family: 'Roboto', sans-serif;
-}
 
+}
+::selection
+{
+    background:deeppink; 
+}
 body, ul
 {
     margin: 0;
@@ -12,7 +16,10 @@ body, ul
     list-style: none;
     padding: 0;
 }
-
+br
+{
+    margin-bottom: 20px;
+}
 li
 {
     display: inline;
@@ -90,7 +97,30 @@ p {
     text-align: center;
     text-align: justify;
 }
+.back
+{
+    text-align: center;
 
+    
+}
+.silka
+{
+    font-weight:bold ;
+    color: black;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: color 1s ease,border-color 1s ease;
+}
+.silka:hover
+{
+    color: blue;
+    border: 2px solid blue;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
 .avatar {
     height: 300px;
     background-image: url("images/background1.png");
@@ -118,6 +148,7 @@ p {
 
 table {
     border-collapse: collapse;
+    align-items: center;
 }
 
 table, th, td {
@@ -131,4 +162,8 @@ th, td {
 
 .text-upper {
     text-transform: uppercase;
+}
+em
+{
+    text-decoration: underline;
 }
