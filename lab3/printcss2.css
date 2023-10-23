@@ -1,0 +1,36 @@
+@media print {
+    .title {
+        display: block;
+        margin: 0 10%;
+        color: black;
+
+
+    }
+
+    .main {
+        background-color: none;
+        background-image: none;
+    }
+
+    .kartochki {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .box1,
+    .box3 {
+        width: 100%;
+
+
+    }
+
+    .box2 {
+        width: 100%;
+        position: static;
+    }
+
+    .new-page-paragraph {
+        page-break-before: always;
+    }
+}

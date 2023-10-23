@@ -1,0 +1,37 @@
+@media print {
+
+    .gridfooter,
+    .faq,
+    .popularprojects,
+    .phrase,
+    div,
+    .title,
+    .hello,
+    .questions-container
+    {
+        background-color: none;
+        background-image: none;
+    }
+    header,
+    footer,
+    .knopka {
+        display: none;
+    }
+
+    p,
+    div,
+    a,
+    ul ,
+    h1{
+        color: black;
+    }
+
+    .popularprojects {
+        display: none;
+    }
+
+    .new-page-paragraph {
+        page-break-before: always;
+      }
+
+}

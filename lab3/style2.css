@@ -1,0 +1,120 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+    
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+body
+{
+    margin: 0;
+    display: block;
+}
+.title
+{
+    display: block;
+    margin:0 30%;
+    color: white;
+    padding: 2vw;
+    font-size: 150%;
+    
+
+}
+
+.main
+{
+   
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(120deg, rgba(255, 84, 54, 0.8), rgba(255, 255, 255, 0)), linear-gradient(185deg, rgba(69, 54, 255, 0.8), rgba(255, 255, 255, 0)), linear-gradient(340deg, rgba(0, 153, 26, 0.8), rgba(255, 255, 255, 0));
+    
+}
+.kartochki
+{
+    display: flex;
+    flex-wrap: wrap ;
+    margin: 5% 30%;
+    gap: 10px;
+    text-align: center;
+}
+.box1,.box3
+{
+    flex-grow: 1;
+    background-color: bisque;
+    min-width: 200px;
+    width: 1vw;
+    height: 40vh;
+    border-radius: 10px;
+    font-size: 70%;
+    
+    list-style-image: url(../img/icons8-галочка-20.png);
+    
+}
+.box2
+{
+    flex-grow: 1.25;
+    background-color: rgb(143, 82, 8);
+    width: 1vw;
+    min-width: 250px;
+    height: 50vh;
+    position: relative;
+    bottom:5vh;
+    list-style-image: url(../img/icons8-галочка-20.png);
+    border-radius: 10px;
+    
+}
+ul
+{
+    text-align:initial;
+}
+.for
+{
+    padding-top: 40px;
+    padding-left: 5px;
+    text-align: initial;
+}
+.for2
+{
+    padding-top: 40px;
+    padding-left: 5px;
+    text-align: initial;
+}
+a
+{
+    text-decoration: none;
+    color: white;
+}
+.button
+{
+    
+    margin: 0 20%;
+    background-color:black;
+    border: 2px so;
+}
+@media screen and (max-width:1677px)
+{
+    .kartochki
+    {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    .box1,.box3
+    {
+        width: 100%;
+    }
+    .box2
+    {
+        width: 100%;
+        position: static;
+    }
+}
+::selection
+{
+    color: white;
+    background-color: purple;
+}

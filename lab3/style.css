@@ -1,0 +1,383 @@
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+
+}
+
+header {
+    width: 100vw;
+    position: fixed;
+    z-index: 2;
+
+
+}
+
+h2 {
+    font-size: 3vw;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+
+
+}
+
+li {
+    padding: 0 2vw 0 2vw;
+    justify-content: space-around;
+    border-bottom: 2px solid black;
+    padding-bottom: 2%;
+    font-weight: bold;
+    transition: all 1s;
+
+}
+
+nav {
+    display: flex;
+    background-color: rgb(1, 2, 2);
+    color: beige;
+    align-items: center;
+    height: 8vh;
+
+
+}
+
+.block1 {
+    display: flex;
+    flex-grow: 1;
+
+
+
+}
+
+.block2 {
+    flex-grow: .25;
+}
+
+.logo {
+
+    width: 50px;
+    height: 50px;
+    margin-left: 5vw;
+    position: relative;
+}
+
+.left {
+    text-align: center;
+    padding: 0;
+
+
+}
+
+.right {
+    display: flex;
+
+
+}
+
+.title {
+    padding: 20% 10%;
+    text-align: center;
+    font-size: 3vw;
+    background-image: url(../img/imgcode.jpg);
+    background-attachment: fixed;
+    color: beige;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+
+}
+
+li:hover {
+    border-bottom: 2px solid white;
+    transform: translate(20px, 20px);
+    cursor: pointer;
+}
+
+.hello {
+    display: block;
+    text-align: center;
+    background-image: linear-gradient(90deg, rgba(52, 59, 202, 1), rgba(162, 120, 182, 1) 50%, rgba(243, 196, 170, 1));
+    justify-content: center;
+    align-items: center;
+    padding: 2vw 20%;
+
+
+
+}
+
+.hello2 {
+    display: block;
+    text-align: justify;
+    margin: 0 10%;
+    font-size: 2vw;
+    color: white;
+}
+
+.questions-container {
+    display: block;
+    background-image: linear-gradient(90deg, rgba(52, 59, 202, 1), rgba(162, 120, 182, 1) 50%, rgba(243, 196, 170, 1));
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vw;
+    padding: 2vw 20%
+}
+
+.question-container-items {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-flow: column;
+    text-align: justify;
+    margin: 0 10%;
+    color: white;
+
+
+}
+
+.border-bottom-for-questions {
+    border-bottom: 2px solid black;
+    padding-top: 0.5em;
+
+}
+
+.border-bottom-for-questions>.right {
+    margin-left: auto;
+
+
+}
+
+img {
+    width: 2vw;
+
+}
+
+.first:hover,
+.second:hover,
+.third:hover,
+.four:hover,
+.fifth:hover {
+    transform: translate(2vw);
+    cursor: pointer;
+
+}
+
+.first,
+.second,
+.third,
+.four,
+.fifth {
+    display: flex;
+    justify-content: left;
+    transition: all 1s;
+}
+
+.text {
+    text-align: end;
+}
+
+.phrase {
+    display: flex;
+    width: 100vw;
+    background-image: linear-gradient(120deg, rgba(255, 84, 54, 0.8), rgba(255, 255, 255, 0)), linear-gradient(185deg, rgba(69, 54, 255, 0.8), rgba(255, 255, 255, 0)), linear-gradient(340deg, rgba(0, 153, 26, 0.8), rgba(255, 255, 255, 0));
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: beige;
+    text-align: center;
+
+}
+
+.phrase-text {
+    margin: 5em;
+}
+
+.popularprojects {
+    display: block;
+    background-image: linear-gradient(90deg, rgba(52, 59, 202, 1), rgba(162, 120, 182, 1) 50%, rgba(243, 196, 170, 1));
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vw;
+    padding: 2vw 25%
+}
+
+.gridbox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1rem;
+    justify-content: space-around;
+    z-index: 1;
+}
+
+.box1 {
+
+    background-image: url(https://framerusercontent.com/images/XSU9IPTBHTBTXmmQ9Lj0Kxd5Kp4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border-radius: 25px;
+    transition: all 1s;
+    filter: grayscale(100%);
+
+}
+
+.box2 {
+
+    background-image: url(https://framerusercontent.com/images/8nusW7taaBRKHe0S9Pqphg9h0E.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    filter: grayscale(100%);
+    transition: all 1s;
+}
+
+.box3 {
+    height: 20vw;
+    background-image: url(https://framerusercontent.com/images/gy3RtTdfHA15QzRWLTRcsJcc58.jpg?scale-down-to=512);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    filter: grayscale(100%);
+    transition: all 1s;
+}
+
+.box1:hover,
+.box2:hover,
+.box3:hover {
+    filter: grayscale(0%);
+    cursor: pointer
+}
+
+.faq {
+    display: block;
+    background-image: linear-gradient(90deg, rgba(52, 59, 202, 1), rgba(162, 120, 182, 1) 50%, rgba(243, 196, 170, 1));
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+    padding: 2vw 20%
+}
+
+.answers {
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: justify;
+    margin: 0 10%;
+    color: white;
+    gap: 25px;
+    justify-content: space-between;
+}
+
+.ans1 {
+    font-size: 1vw;
+}
+
+
+.mainasnwer {
+    color: black;
+}
+
+.gridfooter {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-image: linear-gradient(90deg, rgba(52, 59, 202, 1), rgba(162, 120, 182, 1) 50%, rgba(243, 196, 170, 1));
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+    padding: 2vw 20%;
+    border-top: 2px black solid;
+    justify-content: center;
+    gap: 0.5vw;
+    margin: auto;
+    text-align: center;
+
+}
+
+.headfooter {
+    font-size: 1vw;
+    font-weight: bold;
+}
+
+.mainfooter {
+    font-size: 1vw;
+    color: white;
+}
+
+.contact {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    font-size: 1vw;
+
+}
+
+::selection {
+    color: white;
+    background-color: purple;
+}
+
+.knopka {
+    position: fixed;
+    right: 20px;
+    top: 90vh;
+    width: 3vw;
+    height: 3vw;
+    animation: 1s ease-in 1s infinite alternate rotate;
+    background-image: url(../img/Vip-PNG-Transparent.png);
+    background-size: cover;
+    z-index: 10;
+    transition: all 1s;
+    text-align: center;
+
+
+}
+
+.knopka p {
+    opacity: 0;
+    position: relative;
+    bottom: 10px;
+
+}
+
+@keyframes rotate {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.5);
+    }
+
+}
+
+.knopka:hover {
+    animation: none;
+    background-image: none;
+    width: 5vw;
+    height: 5vh;
+    background-color: blueviolet;
+    border-radius: 20px;
+    content: "Купить подписку";
+
+
+}
+
+.knopka:hover p {
+    opacity: 1;
+    color: white;
+
+}
+
